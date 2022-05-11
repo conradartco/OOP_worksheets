@@ -6,9 +6,7 @@ class Customer:
         self.cart_items = ShoppingCart()
         
     def add_item(self, product_input):
-        product_input = ShoppingCart()
-        product_input.add_to_cart()
+        self.cart_items.add_to_cart(product_input)
 
     def view_cart(self):
-        for items in ShoppingCart():
-            print(items)
+        self.cart_items.show_items()
